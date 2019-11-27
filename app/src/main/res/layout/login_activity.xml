@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:background="@color/green"
+        android:orientation="vertical"
+        android:id="@+id/linear"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="60dp"
+            android:text="LOGIN"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="30dp"
+            android:text="Email"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Input email"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="18dp"
+            android:text="Pasword"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtPass"
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btn_ForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            android:background="@color/transparent"
+            android:text="Forgot password?"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            />
+
+        <ImageButton
+        android:id="@+id/btn_Login"
+        android:layout_width="118dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_border"
+        android:textColor="@color/green"
+        android:src="@drawable/ic_arrow_forward_black_24dp"
+        />
+
+        <Button
+            android:id="@+id/btn_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@color/transparent"
+            android:text="Don't have an account?"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_AboutUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/transparent"
+        android:text="About us!"
+        android:textAllCaps="false"
+        android:textColor="@color/green"
+        android:textSize="15sp" />
+
+</LinearLayout>

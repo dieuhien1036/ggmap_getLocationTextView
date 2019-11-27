@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MapsActivity"
+    >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="664dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/svLocation"
+            android:queryHint="Search"
+            android:layout_margin="10dp"
+            android:elevation="5dp"
+            android:background="@drawable/bg_searchview"
+            android:iconifiedByDefault="false"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="144dp"
+        android:layout_height="111dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="65dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="127dp"
+                android:layout_height="47dp"
+                android:src="@drawable/distance" />
+
+            <TextView
+                android:id="@+id/txt_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="15dp"
+                android:text="0 Km" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+
+            >
+
+            <ImageView
+                android:layout_width="127dp"
+                android:layout_height="47dp"
+                android:src="@drawable/time" />
+
+            <TextView
+                android:id="@+id/txt_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="10dp"
+                android:text="0 Min" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_location"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/button_direction"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="0dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/ibtn_report"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@drawable/report" />
+
+        <ImageButton
+            android:id="@+id/ibtn_clean"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@drawable/clean" />
+
+        <ImageButton
+            android:id="@+id/ibtn_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/rank"
+            android:background="@color/white"/>
+
+        <ImageButton
+            android:id="@+id/ibtn_account"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/account"
+            android:background="@color/white"/>
+    </LinearLayout>
+</RelativeLayout>
